@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/location_code_title"
+            android:textSize="@dimen/activity_vertical_margin" >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="text|textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/SpinnerFeedbackType"
+            style="@style/AppBaseTheme"
+            android:layout_width="147dp"
+            android:prompt="@string/entrytype_title"
+            android:layout_height="wrap_content"
+            android:entries="@array/entrytypelist">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed" />
+
+    </LinearLayout>
+
+</ScrollView>
