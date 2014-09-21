@@ -2,14 +2,25 @@
 <resources>
 
     <string name="app_name">BarCodeReader</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Text views -->
     <string name="location_code_title">Enter UN Location Code</string>
-    
+    <string name="title_activity_scan_result">ScanResultActivity</string>
+
+    <!-- Entry types -->
     <string name="entrytype1">Pickup</string>
     <string name="entrytype2">Arrival</string>
     <string name="entrytype3">Departure</string>
-    
     <string name="entrytype_title">Select entry type</string>
+
+    <!-- Buttons -->
+    <string name="scan_button_title">Scan</string>
+    <string name="return_to_main_title">To main</string>
+    <string name="quit_button_title">Quit</string>
+    <string name="complete_button_title">Complete</string>
+    <string name="rescan_button_title">Rescan</string>
+    <string name="cancel_button_title">Cancel</string>
+    <string name="title_activity_post_result">PostResultActivity</string>
 
 </resources>

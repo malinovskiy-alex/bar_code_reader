@@ -4,47 +4,79 @@
     android:layout_height="wrap_content"
     android:scrollbars="vertical" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical" >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
 
-        <TextView
-            android:id="@+id/TextViewTitle"
+        <TableRow
+            android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="@string/location_code_title"
-            android:textSize="@dimen/activity_vertical_margin" >
+            android:layout_height="20pt"
+            android:layout_margin="20dip"
+            android:orientation="horizontal" >
 
-        </TextView>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/location_code_title"
+                android:textSize="6pt"
+                android:typeface="serif" />
 
-        <EditText
-            android:id="@+id/EditTextName"
-            android:layout_width="125dp"
-            android:layout_height="match_parent"
-            android:ems="10"
-            android:inputType="text|textPersonName" >
+            <EditText
+                android:id="@+id/locationCode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:ems="10"
+                android:inputType="text" >
 
-            <requestFocus />
-        </EditText>
+                <requestFocus />
+            </EditText>
+        </TableRow>
 
-        <Spinner
-            android:id="@+id/SpinnerFeedbackType"
-            style="@style/AppBaseTheme"
-            android:layout_width="147dp"
-            android:prompt="@string/entrytype_title"
-            android:layout_height="wrap_content"
-            android:entries="@array/entrytypelist">
-
-        </Spinner>
-
-        <Button
-            android:id="@+id/button1"
+        <TableRow
+            android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Proceed" />
+            android:layout_margin="15dip" >
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/entrytype_title"
+                android:typeface="serif" />
+
+            <Spinner
+                android:id="@+id/entryType"
+                android:layout_width="fill_parent"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                android:entries="@array/entrytypelist" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/scan"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_button_title"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/quit_button_title"
+                android:typeface="serif" />
+        </TableRow>
+    </TableLayout>
 
 </ScrollView>

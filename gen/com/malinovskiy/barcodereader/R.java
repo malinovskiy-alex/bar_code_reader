@@ -24,33 +24,60 @@ public final class R {
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
         public static final int eight=0x7f050002;
+        public static final int six=0x7f050003;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int EditTextName=0x7f090002;
         public static final int ScrollView01=0x7f090000;
-        public static final int SpinnerFeedbackType=0x7f090003;
-        public static final int TextViewTitle=0x7f090001;
-        public static final int action_settings=0x7f090005;
-        public static final int button1=0x7f090004;
+        public static final int TextView02=0x7f090005;
+        public static final int action_settings=0x7f09000f;
+        public static final int cancel=0x7f09000d;
+        public static final int complete=0x7f09000b;
+        public static final int entryType=0x7f090006;
+        public static final int errors=0x7f09000e;
+        public static final int linearLayout1=0x7f09000a;
+        public static final int locationCode=0x7f090003;
+        public static final int quit=0x7f090009;
+        public static final int rescan=0x7f09000c;
+        public static final int scan=0x7f090008;
+        public static final int tableRow1=0x7f090001;
+        public static final int tableRow2=0x7f090004;
+        public static final int tableRow3=0x7f090007;
+        public static final int textView1=0x7f090002;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int activity_scan_result=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f080000;
+        public static final int post_result=0x7f080001;
+        public static final int scan_result=0x7f080002;
     }
     public static final class string {
-        public static final int action_settings=0x7f060002;
+        public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int cancel_button_title=0x7f06000d;
+        public static final int complete_button_title=0x7f06000b;
+        /**  Entry types 
+         */
         public static final int entrytype1=0x7f060004;
         public static final int entrytype2=0x7f060005;
         public static final int entrytype3=0x7f060006;
         public static final int entrytype_title=0x7f060007;
-        public static final int hello_world=0x7f060001;
-        public static final int location_code_title=0x7f060003;
+        /**  Text views 
+         */
+        public static final int location_code_title=0x7f060002;
+        public static final int quit_button_title=0x7f06000a;
+        public static final int rescan_button_title=0x7f06000c;
+        public static final int return_to_main_title=0x7f060009;
+        /**  Buttons 
+         */
+        public static final int scan_button_title=0x7f060008;
+        public static final int title_activity_post_result=0x7f06000e;
+        public static final int title_activity_scan_result=0x7f060003;
     }
     public static final class style {
         /** 
