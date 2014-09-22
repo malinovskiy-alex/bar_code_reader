@@ -13,6 +13,8 @@ import android.util.Log;
 import com.malinovskiy.barcodereader.domain.BarcodeBean;
 
 public class SendBarcodeTask extends AsyncTask<BarcodeBean, Void, Integer> {
+	public static final int SUCCESSFULL_CODE=200;
+	public static final int ERROR_CODE=400;
 	private static final String TAG_NAME = "SendBarcodeTask";
 	private static final String POST_URL = "http://barcodereceiver.herokuapp.com/barcodes";
 
@@ -32,7 +34,7 @@ public class SendBarcodeTask extends AsyncTask<BarcodeBean, Void, Integer> {
 					.getStatusCode();
 		} catch (IOException e) {
 			Log.e(TAG_NAME, "Post request error.", e);
-			return 400;
+			return ERROR_CODE;
 		}
 	}
 

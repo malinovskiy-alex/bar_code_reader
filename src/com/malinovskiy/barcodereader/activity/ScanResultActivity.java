@@ -44,15 +44,17 @@ public class ScanResultActivity extends Activity {
 					try {
 						SendBarcodeTask task = new SendBarcodeTask();
 						task.execute(bean);
-						if (task.get() != 200) {
+						if (task.get() != SendBarcodeTask.SUCCESSFULL_CODE) {
 							errors.setText("Unable to send data on server. Please try again.");
 						} else {
 							errors.setText("Barcode is added on the server.");
 						}
 					} catch (InterruptedException e) {
-						Log.e(TASK_TAG_NAME, "Post barcode task was interrupted.", e);
+						Log.e(TASK_TAG_NAME,
+								"Post barcode task was interrupted.", e);
 					} catch (ExecutionException e) {
-						Log.e(TASK_TAG_NAME, "There is an error during task execution", e);
+						Log.e(TASK_TAG_NAME,
+								"There is an error during task execution", e);
 					}
 				} else {
 					errors.setText("No network connection available.");
